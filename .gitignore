@@ -68,38 +68,34 @@ Thumbs.db
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints
 
-# Video files (too large for Git)
+# Local datasets and videos (keep locally; do not publish)
+data/
 *.mp4
 *.avi
 *.mov
 *.mkv
-data/*.mp4
-data/*.avi
 
-# Large data files
-data/processed/X.npy
-data/processed/y.npy
-data/gait_keypoints.csv
+# Generated data and experiment artifacts
+models/
+results/
+notebooks/
+*.csv
+*.npy
+*.npz
 
-# Model files (can be regenerated)
+# Trained models and checkpoints (can be regenerated)
 *.pkl
 *.joblib
 *.h5
 *.pth
 *.pt
-models/saved/*.pkl
-
-# Keep visualizations and metadata (small files)
-!data/processed/labels.json
-!data/processed/metadata.json
-!models/saved/metadata.json
 
 # Temporary files
 *.tmp
 *.temp
 *~
 
-# Report-related documentation (personal notes, not code)
+# Personal notes and presentation references
 GEN_AI_RESEARCH_PROMPT.md
 REPORT_OUTPUTS.md
 REPORT_QUICK_START.md
@@ -110,8 +106,9 @@ PRESENTATION_GUIDE.md
 QUICK_START.md
 SETUP_GUIDE.md
 START_HERE.md
+TEMPORAL_FEATURES_RESULTS.md
+DATA_COLLECTION_GUIDE.md
+CROSS_VALIDATION_EXPLAINED.md
 
 # Keep project documentation (important for understanding code)
 !README.md
-!PROJECT_ROADMAP.md
-!CURRENT_PROJECT_STATUS.md
